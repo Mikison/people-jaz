@@ -12,10 +12,44 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/people-data" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/people-data" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/people-random-api-client" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/people-random-api-client" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <compositeConfiguration>
+          <compositeBuild compositeDefinitionSource="SCRIPT">
+            <builds>
+              <build path="$PROJECT_DIR$/people-data" name="people-data">
+                <projects>
+                  <project path="$PROJECT_DIR$/people-data" />
+                </projects>
+              </build>
+              <build path="$PROJECT_DIR$/people-random-api-client" name="people-random-api-client">
+                <projects>
+                  <project path="$PROJECT_DIR$/people-random-api-client" />
+                </projects>
+              </build>
+            </builds>
+          </compositeBuild>
+        </compositeConfiguration>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/people-updater" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/people-data" />
+            <option value="$PROJECT_DIR$/people-random-api-client" />
+            <option value="$PROJECT_DIR$/people-updater" />
           </set>
         </option>
       </GradleProjectSettings>

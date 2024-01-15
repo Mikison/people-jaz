@@ -4,5 +4,5 @@ import pl.sonmiike.peoplerandomapiclient.contract.PeopleResultsDTO;
 
 public interface IRandomPeopleApiClient {
 
-    PeopleResultsDTO getRandomPeople(int howManyPeople);
+    PeopleResultsDTO getRandomPeople();
 }

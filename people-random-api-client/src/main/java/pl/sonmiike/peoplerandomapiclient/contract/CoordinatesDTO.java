@@ -10,8 +10,8 @@ public class CoordinatesDTO {
 
 
     @JsonProperty("lat")
-    private String latitude;
+    private Double latitude;
     @JsonProperty("lng")
-    private String longitude;
+    private Double longitude;
 
 }

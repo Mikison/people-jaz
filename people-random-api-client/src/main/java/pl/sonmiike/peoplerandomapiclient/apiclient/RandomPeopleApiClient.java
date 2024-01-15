@@ -1,14 +1,18 @@
 package pl.sonmiike.peoplerandomapiclient.apiclient;
 
-import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Component;
+import org.springframework.beans.factory.annotation.Value;
+
+import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import pl.sonmiike.peoplerandomapiclient.contract.PeopleResultsDTO;
 
-@Component
+@Service
 public class RandomPeopleApiClient implements IRandomPeopleApiClient {
 
     private final RestTemplate restTemplate;
+
+
+//    private String apiKey;
 
 
     public RandomPeopleApiClient() {
@@ -16,9 +20,11 @@ public class RandomPeopleApiClient implements IRandomPeopleApiClient {
     }
 
     @Override
-    public PeopleResultsDTO getRandomPeople(int howManyPeople) {
+    public PeopleResultsDTO getRandomPeople() {
         var url = "https://my.api.mockaroo.com/fixed_json.json?key=9a320820";
         return restTemplate.getForObject(url, PeopleResultsDTO.class);
+
+
     }
 
 

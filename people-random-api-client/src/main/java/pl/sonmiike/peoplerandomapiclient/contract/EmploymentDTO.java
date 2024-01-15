@@ -10,6 +10,6 @@ import lombok.Data;
 public class EmploymentDTO {
 
         private String title;
-        @JsonProperty("key_skill")
-        private String keySkill;
+        @JsonProperty("company_name")
+        private String companyName;
 }

@@ -5,7 +5,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class PersonDTO {
@@ -22,7 +21,7 @@ public class PersonDTO {
     @JsonProperty("phone_number")
     private String phoneNumber;
     @JsonProperty("social_insurance_number")
-    private String socialInsuranceNumber;
+    private String socialSecurityNumber;
     @JsonProperty("date_of_birth")
     private LocalDate dateOfBirthDate;
     private EmploymentDTO employment;
