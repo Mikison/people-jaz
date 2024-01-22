@@ -1,0 +1,3 @@
+rootProject.name = 'people-updater'
+includeBuild '../people-random-api-client'
+includeBuild '../people-data'
